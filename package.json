@@ -1,0 +1,22 @@
+{
+  "name": "reactbot",
+  "version": "1.0.0",
+  "description": "React bot ",
+  "main": "index.js",
+  "engines": {
+    "node": "12.16.1",
+    "npm":"6.14.7"
+  },
+  "scripts": {
+    "start": "node index.js",
+    "backend":"nodemon index.js"
+  },
+  "author": "Pankaj",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.1"
+  },
+  "devDependencies": {
+    "nodemon":"2.0.4"
+  }
+}
