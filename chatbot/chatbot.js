@@ -2,16 +2,7 @@
 const dialogFlow=require('dialogflow');
 const config=require('../config/keys');
 const structjsnon=require('./structjson');
-//const sessionClient=new dialogFlow.SessionsClient();
-
-const projectID=config.googleProjectID;
-const credentials={
-        client_email:config.googleClientEmail,
-        private_key:config.googlePrivateKey      
-
-        
-};
-const sessionClient=new dialogFlow.SessionsClient({projectID,credentials});
+const sessionClient=new dialogFlow.SessionsClient();
 const sessionPath=sessionClient.sessionPath(config.googleProjectID,config.dialogFlowSessionID);
 module.exports={
     textQuery:async function(text,parameters={}){

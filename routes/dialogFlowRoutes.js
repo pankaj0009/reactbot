@@ -9,9 +9,9 @@ const sessionPath=sessionClient.sessionPath(config.googleProjectID,config.dialog
 module.exports=app=>{
     app.use(bodyParser.urlencoded({ extended: false }));
 app.use(bodyParser.json());
-app.get('/',(req,res)=>{
-    res.send({'hello':'kya bhai'});
-});
+//app.get('/',(req,res)=>{
+   // res.send({'hello':'kya bhai'});
+//});
 
 app.post('/api/df_text_query',async (req,res)=>{
  
